@@ -1,12 +1,16 @@
 import React from 'react';
 
-class Child extends React.Component{
-    constructor(abc){
+class Child extends React.Component {
+    constructor(abc) {
         super(abc);
         console.log(this);
     }
-    render(){
-        return <div className={this.props.className || ''}><h2>This is a child component: {this.props.someData}</h2></div>
+    render() {
+        return (
+            <div className={this.props.className || ''}>
+                <h2>This is a child component</h2>
+            </div>
+        );
     }
 }
 
