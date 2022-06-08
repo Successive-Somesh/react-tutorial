@@ -7,6 +7,59 @@
   pointer-events: none;
 }
 
+.header{
+  height:80px;
+  background-color: darkslateblue;
+  line-height:80px;
+  text-align:center;
+  font-weight: 500;
+  color:azure;
+}
+
+.footer{
+  height:80px;
+  background-color: darkslateblue;
+  line-height:80px;
+  text-align:center;
+  font-weight: 500;
+  color:azure;
+}
+.container{
+  display:flex;
+}
+.sidebar{
+  width:15%;
+  background-color:lightgrey;
+}
+.main{
+  flex:1;
+  overflow:auto;
+  padding:1em;
+}
+.demo{
+  border:1px dotted #282c34;
+  padding:0.5em;
+  margin:1em;
+}
+.topic{
+  padding:1em;
+  margin: 1em;
+  background-color: darkslateblue;
+  color:azure;
+}
+.instruction{
+  padding:1em;
+  margin: 1em;
+  background-color: azure;
+  color:darkslateblue;
+}
+
+.cn{
+  font-weight: 500;
+  border:dotted 1px #fff;
+  padding: 0.3em;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
