@@ -39,10 +39,10 @@ function RenderChilds(props) {
             </SyntaxHighlighter>
             <h2>Output</h2>
             <div style={docco}>
+                <Divider ></Divider>
                 <Child />
+                <Divider ></Divider>
             </div>
-            <Divider ></Divider>
-
 
             <h2>Calling Child Component with props</h2>
             <SyntaxHighlighter language="javascript" style={docco}>

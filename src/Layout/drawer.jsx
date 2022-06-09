@@ -15,7 +15,11 @@ const drawer = (
       <Toolbar />
       <Divider />
       <List>
-        {['renderChilds','child','childwithprops','childwithstateandprops','lifecycle'].map((text, index) => (
+        <ListItemButton>
+          <ListItemIcon><InboxIcon /></ListItemIcon>
+          <ListItemText><strong>Introduction</strong></ListItemText>
+        </ListItemButton>
+        {['Javascript','JSX','React',].map((text, index) => (
           <ListItem key={text} disablePadding button component={Link} href={'/m1/'+text}>
             <ListItemButton>
               <ListItemIcon>
@@ -28,7 +32,11 @@ const drawer = (
       </List>
       <Divider />
       <List>
-      {['child','childwithprops','childwithstateandprops','lifecycle'].map((text, index) => (
+        <ListItemButton>
+          <ListItemIcon><InboxIcon /></ListItemIcon>
+          <ListItemText><strong>Basic Concepts</strong></ListItemText>
+        </ListItemButton>
+        {['RenderChilds','Lifecycle'].map((text, index) => (
           <ListItem key={text} disablePadding button component={Link} href={'/m1/'+text}>
             <ListItemButton>
               <ListItemIcon>
@@ -41,8 +49,12 @@ const drawer = (
       </List>
       <Divider />
       <List>
-      {['child','childwithprops','childwithstateandprops','lifecycle'].map((text, index) => (
-          <ListItem key={text} disablePadding button component={Link} to={'/m1/'+text}>
+        <ListItemButton>
+          <ListItemIcon><InboxIcon /></ListItemIcon>
+          <ListItemText><strong>Advance Concepts</strong></ListItemText>
+        </ListItemButton>
+        {['RenderChilds','Lifecycle'].map((text, index) => (
+          <ListItem key={text} disablePadding button component={Link} href={'/m1/'+text}>
             <ListItemButton>
               <ListItemIcon>
                 {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
@@ -52,6 +64,25 @@ const drawer = (
           </ListItem>
         ))}
       </List>
+      <Divider />
+      <List>
+        <ListItemButton>
+          <ListItemIcon><InboxIcon /></ListItemIcon>
+          <ListItemText><strong>API Calling</strong></ListItemText>
+        </ListItemButton>
+        {['RenderChilds','Lifecycle'].map((text, index) => (
+          <ListItem key={text} disablePadding button component={Link} href={'/m1/'+text}>
+            <ListItemButton>
+              <ListItemIcon>
+                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+              </ListItemIcon>
+              <ListItemText primary={text} />
+            </ListItemButton>
+          </ListItem>
+        ))}
+      </List>
+      <Divider />
+      
     </div>
   );
 
