@@ -25,6 +25,7 @@ import Child from './components/Child';
 import Sidebar from './Layout/Sidebar';
 import Header from './Layout/Header';
 import Footer from './Layout/Footer';
+import RenderChilds from './components/RenderChilds';
 ////////////////////
 import PropTypes from 'prop-types';
 import AppBar from '@mui/material/AppBar';
@@ -122,6 +123,7 @@ function App(props) {
           <Routes>
             <Route path="/" element={<Child />} />
             <Route path="m1" element={<M1Home />}>
+              <Route path="renderChilds" element={<RenderChilds />} ></Route>
               <Route path="child" element={<Child />} ></Route>
               <Route path="childwithprops" element={<ChildWithProps someData="some data" moreData="more data"/>} ></Route>
               <Route path="childwithpropsandstate" element={<ChildWithStateAndProps />} ></Route>

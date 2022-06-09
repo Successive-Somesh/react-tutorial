@@ -1,9 +1,7 @@
 import React from 'react';
-
 class Child extends React.Component {
-    constructor(abc) {
-        super(abc);
-        console.log(this);
+    constructor(props) {
+        super(props);
     }
     render() {
         return (
@@ -13,14 +11,4 @@ class Child extends React.Component {
         );
     }
 }
-
-/* function Child(props){
-    return <h2>This is a child component: {props.someData}</h2>;   
-} */
-//const Child = (props) => <h2>This is a child component: {props.someData}</h2>
-
-/* const Child = (props) => {
-    return <h2>This is a child component: {props.someData}</h2>;
-} */
-
 export default Child;

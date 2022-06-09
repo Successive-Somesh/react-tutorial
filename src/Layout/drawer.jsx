@@ -15,7 +15,7 @@ const drawer = (
       <Toolbar />
       <Divider />
       <List>
-        {['child','childwithprops','childwithstateandprops','lifecycle'].map((text, index) => (
+        {['renderChilds','child','childwithprops','childwithstateandprops','lifecycle'].map((text, index) => (
           <ListItem key={text} disablePadding button component={Link} href={'/m1/'+text}>
             <ListItemButton>
               <ListItemIcon>
@@ -42,7 +42,7 @@ const drawer = (
       <Divider />
       <List>
       {['child','childwithprops','childwithstateandprops','lifecycle'].map((text, index) => (
-          <ListItem key={text} disablePadding button component={Link} href={'/m1/'+text}>
+          <ListItem key={text} disablePadding button component={Link} to={'/m1/'+text}>
             <ListItemButton>
               <ListItemIcon>
                 {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
