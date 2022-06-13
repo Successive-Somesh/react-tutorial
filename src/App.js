@@ -4,7 +4,7 @@ import Child1 from '@components/Child';
 import Child2 from '@components/Child';
 import ChildWithProps from '@components/ChildWithProps';
 import ChildWithStateAndProps from '@components/ChildWithStateAndProps.js';
-import LifeCycle from '@components/LifeCycle';
+import LifeCyclePage from '@pages/LifeCyclePage';
 import ChildWithElements from '@components/ChildWithElements';
 import Level1 from '@components/Level1';
 import { UserProvider } from '@context/UserContext';
@@ -127,7 +127,7 @@ function App(props) {
               <Route path="child" element={<Child />} ></Route>
               <Route path="childwithprops" element={<ChildWithProps someData="some data" moreData="more data"/>} ></Route>
               <Route path="childwithpropsandstate" element={<ChildWithStateAndProps />} ></Route>
-              <Route path="lifecycle" element={<LifeCycle />} ></Route>
+              <Route path="lifecycle" element={<LifeCyclePage />} ></Route>
             </Route>
             <Route path='m2' element={<M2Home />}></Route>
             <Route path="m3" element={<M3Home />}></Route>

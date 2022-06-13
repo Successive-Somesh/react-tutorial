@@ -59,6 +59,9 @@
   border:dotted 1px #fff;
   padding: 0.3em;
 }
+.gapBottom{
+  margin-bottom: 1em;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

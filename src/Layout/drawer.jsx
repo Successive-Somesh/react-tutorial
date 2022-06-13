@@ -82,6 +82,23 @@ const drawer = (
         ))}
       </List>
       <Divider />
+      <List>
+        <ListItemButton>
+          <ListItemIcon><InboxIcon /></ListItemIcon>
+          <ListItemText><strong>Testing</strong></ListItemText>
+        </ListItemButton>
+        {['RenderChilds','Lifecycle'].map((text, index) => (
+          <ListItem key={text} disablePadding button component={Link} href={'/m1/'+text}>
+            <ListItemButton>
+              <ListItemIcon>
+                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+              </ListItemIcon>
+              <ListItemText primary={text} />
+            </ListItemButton>
+          </ListItem>
+        ))}
+      </List>
+      <Divider />
       
     </div>
   );

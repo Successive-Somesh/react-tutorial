@@ -1,7 +1,10 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import BasicComponent from "./pages/BasicComponent";
 function M1Home() {
-        return(<div><Outlet /></div>);
+        return(
+        <div>
+            <p>Basic Module</p>
+            <Outlet />
+        </div>);
 }
 export default M1Home;
