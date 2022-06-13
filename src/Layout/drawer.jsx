@@ -19,8 +19,8 @@ const drawer = (
           <ListItemIcon><InboxIcon /></ListItemIcon>
           <ListItemText><strong>Introduction</strong></ListItemText>
         </ListItemButton>
-        {['Javascript','JSX','React',].map((text, index) => (
-          <ListItem key={text} disablePadding button component={Link} href={'/m1/'+text}>
+        {['JS','JSX','React',].map((text, index) => (
+          <ListItem key={text} disablePadding button component={Link} href={'/introduction/'+text+'-intro'}>
             <ListItemButton>
               <ListItemIcon>
                 {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
@@ -37,7 +37,7 @@ const drawer = (
           <ListItemText><strong>Basic Concepts</strong></ListItemText>
         </ListItemButton>
         {['RenderChilds','Lifecycle'].map((text, index) => (
-          <ListItem key={text} disablePadding button component={Link} href={'/m1/'+text}>
+          <ListItem key={text} disablePadding button component={Link} href={'/basics/'+text}>
             <ListItemButton>
               <ListItemIcon>
                 {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
@@ -54,7 +54,7 @@ const drawer = (
           <ListItemText><strong>Advance Concepts</strong></ListItemText>
         </ListItemButton>
         {['RenderChilds','Lifecycle'].map((text, index) => (
-          <ListItem key={text} disablePadding button component={Link} href={'/m1/'+text}>
+          <ListItem key={text} disablePadding button component={Link} href={'/advanced/'+text}>
             <ListItemButton>
               <ListItemIcon>
                 {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
@@ -71,7 +71,7 @@ const drawer = (
           <ListItemText><strong>API Calling</strong></ListItemText>
         </ListItemButton>
         {['RenderChilds','Lifecycle'].map((text, index) => (
-          <ListItem key={text} disablePadding button component={Link} href={'/m1/'+text}>
+          <ListItem key={text} disablePadding button component={Link} href={'/api-call/'+text}>
             <ListItemButton>
               <ListItemIcon>
                 {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
@@ -88,7 +88,24 @@ const drawer = (
           <ListItemText><strong>Testing</strong></ListItemText>
         </ListItemButton>
         {['RenderChilds','Lifecycle'].map((text, index) => (
-          <ListItem key={text} disablePadding button component={Link} href={'/m1/'+text}>
+          <ListItem key={text} disablePadding button component={Link} href={'/testing/'+text}>
+            <ListItemButton>
+              <ListItemIcon>
+                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+              </ListItemIcon>
+              <ListItemText primary={text} />
+            </ListItemButton>
+          </ListItem>
+        ))}
+      </List>
+      <Divider />
+      <List>
+        <ListItemButton>
+          <ListItemIcon><InboxIcon /></ListItemIcon>
+          <ListItemText><strong>Performance</strong></ListItemText>
+        </ListItemButton>
+        {['RenderChilds','Lifecycle'].map((text, index) => (
+          <ListItem key={text} disablePadding button component={Link} href={'/performance/'+text}>
             <ListItemButton>
               <ListItemIcon>
                 {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}

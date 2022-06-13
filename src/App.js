@@ -39,6 +39,10 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import drawer from '@layout/drawer';
+import routes from './routes';
+import JSIntroPage from './pages/JSIntroPage';
+import JSXIntroPage from './pages/JSXIntroPage';
+import ReactIntroPage from './pages/ReactIntroPage';
 const drawerWidth = 300;
 
 function App(props) {
@@ -120,17 +124,58 @@ function App(props) {
         
 
         <section className='main' style={{height:'100vh'}}>
+          {/* {routes.map((e,index)=>{
+            return e.module;
+          })} */}
           <Routes>
             <Route path="/" element={<Child />} />
-            <Route path="m1" element={<M1Home />}>
+            
+            <Route path="introduction" element={<M1Home />}>
+              <Route path="js-intro" element={<JSIntroPage />} />
+              <Route path="jsx-intro" element={<JSXIntroPage />} />
+              <Route path="react-intro" element={<ReactIntroPage />} />
+            </Route>
+            
+            <Route path="basics" element={<M1Home />}>
               <Route path="renderChilds" element={<RenderChilds />} ></Route>
               <Route path="child" element={<Child />} ></Route>
               <Route path="childwithprops" element={<ChildWithProps someData="some data" moreData="more data"/>} ></Route>
               <Route path="childwithpropsandstate" element={<ChildWithStateAndProps />} ></Route>
               <Route path="lifecycle" element={<LifeCyclePage />} ></Route>
             </Route>
-            <Route path='m2' element={<M2Home />}></Route>
-            <Route path="m3" element={<M3Home />}></Route>
+
+            <Route path="introduction" element={<M1Home />}>
+              <Route path="renderChilds" element={<RenderChilds />} ></Route>
+              <Route path="child" element={<Child />} ></Route>
+              <Route path="childwithprops" element={<ChildWithProps someData="some data" moreData="more data"/>} ></Route>
+              <Route path="childwithpropsandstate" element={<ChildWithStateAndProps />} ></Route>
+              <Route path="lifecycle" element={<LifeCyclePage />} ></Route>
+            </Route>
+
+            <Route path="introduction" element={<M1Home />}>
+              <Route path="renderChilds" element={<RenderChilds />} ></Route>
+              <Route path="child" element={<Child />} ></Route>
+              <Route path="childwithprops" element={<ChildWithProps someData="some data" moreData="more data"/>} ></Route>
+              <Route path="childwithpropsandstate" element={<ChildWithStateAndProps />} ></Route>
+              <Route path="lifecycle" element={<LifeCyclePage />} ></Route>
+            </Route>
+
+            <Route path="introduction" element={<M1Home />}>
+              <Route path="renderChilds" element={<RenderChilds />} ></Route>
+              <Route path="child" element={<Child />} ></Route>
+              <Route path="childwithprops" element={<ChildWithProps someData="some data" moreData="more data"/>} ></Route>
+              <Route path="childwithpropsandstate" element={<ChildWithStateAndProps />} ></Route>
+              <Route path="lifecycle" element={<LifeCyclePage />} ></Route>
+            </Route>
+
+            <Route path="introduction" element={<M1Home />}>
+              <Route path="renderChilds" element={<RenderChilds />} ></Route>
+              <Route path="child" element={<Child />} ></Route>
+              <Route path="childwithprops" element={<ChildWithProps someData="some data" moreData="more data"/>} ></Route>
+              <Route path="childwithpropsandstate" element={<ChildWithStateAndProps />} ></Route>
+              <Route path="lifecycle" element={<LifeCyclePage />} ></Route>
+            </Route>
+
             <Route path="*" element={<M1Home />} ></Route>
           </Routes>
         </section>

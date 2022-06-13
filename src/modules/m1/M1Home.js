@@ -3,7 +3,6 @@ import { Outlet } from "react-router-dom";
 function M1Home() {
         return(
         <div>
-            <p>Basic Module</p>
             <Outlet />
         </div>);
 }
