@@ -1,40 +1,19 @@
 import './App.css';
 import React, { Component } from 'react';
-import Child1 from '@components/Child';
-import Child2 from '@components/Child';
 import ChildWithProps from '@components/ChildWithProps';
 import ChildWithStateAndProps from '@components/ChildWithStateAndProps.js';
 import LifeCyclePage from '@pages/LifeCyclePage';
-import ChildWithElements from '@components/ChildWithElements';
-import Level1 from '@components/Level1';
-import { UserProvider } from '@context/UserContext';
-import ConsumerChild1 from '@components/ConsumerChild1';
-import ChildWrapper1 from '@components/ChildWrapper1';
-import ChildWrapper2 from '@components/ChildWrapper2';
-import ConsumerChild2 from '@components/ConsumerChild2';
-import FormSample from '@components/FormSample';
-import FormSampleWithData from '@components/FormSampleWithData';
-import ErrorBoundary from '@components/ErrorBoundary';
-import BasicComponentFC from '@modules/m1/pages/BasicComponentFC';
-import BasicComponent from '@modules/m1/pages/BasicComponent';
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
 import M1Home from '@modules/m1/M1Home';
-import M2Home from '@modules/m2/M2Home';
-import M3Home from '@modules/m3/M3Home';
 import Child from '@components/Child';
-import Sidebar from '@layout/Sidebar';
-import Header from '@layout/Header';
-import Footer from '@layout/Footer';
 import RenderChilds from '@pages/RenderChilds';
 ////////////////////
 import PropTypes from 'prop-types';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import CssBaseline from '@mui/material/CssBaseline';
-import Divider from '@mui/material/Divider';
 import Drawer from '@mui/material/Drawer';
 import IconButton from '@mui/material/IconButton';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
@@ -144,7 +123,7 @@ function App(props) {
               <Route path="lifecycle" element={<LifeCyclePage />} ></Route>
             </Route>
 
-            <Route path="introduction" element={<M1Home />}>
+            <Route path="advanced" element={<M1Home />}>
               <Route path="renderChilds" element={<RenderChilds />} ></Route>
               <Route path="child" element={<Child />} ></Route>
               <Route path="childwithprops" element={<ChildWithProps someData="some data" moreData="more data"/>} ></Route>
@@ -152,7 +131,7 @@ function App(props) {
               <Route path="lifecycle" element={<LifeCyclePage />} ></Route>
             </Route>
 
-            <Route path="introduction" element={<M1Home />}>
+            <Route path="api" element={<M1Home />}>
               <Route path="renderChilds" element={<RenderChilds />} ></Route>
               <Route path="child" element={<Child />} ></Route>
               <Route path="childwithprops" element={<ChildWithProps someData="some data" moreData="more data"/>} ></Route>
@@ -160,7 +139,7 @@ function App(props) {
               <Route path="lifecycle" element={<LifeCyclePage />} ></Route>
             </Route>
 
-            <Route path="introduction" element={<M1Home />}>
+            <Route path="testing" element={<M1Home />}>
               <Route path="renderChilds" element={<RenderChilds />} ></Route>
               <Route path="child" element={<Child />} ></Route>
               <Route path="childwithprops" element={<ChildWithProps someData="some data" moreData="more data"/>} ></Route>
@@ -168,7 +147,7 @@ function App(props) {
               <Route path="lifecycle" element={<LifeCyclePage />} ></Route>
             </Route>
 
-            <Route path="introduction" element={<M1Home />}>
+            <Route path="performance" element={<M1Home />}>
               <Route path="renderChilds" element={<RenderChilds />} ></Route>
               <Route path="child" element={<Child />} ></Route>
               <Route path="childwithprops" element={<ChildWithProps someData="some data" moreData="more data"/>} ></Route>

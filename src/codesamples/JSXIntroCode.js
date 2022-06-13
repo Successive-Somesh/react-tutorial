@@ -102,7 +102,7 @@ const myElement = <h1>{text}</h1>;
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(myElement);
-   `;
+`;
 
    export const code10 = `
    import React from 'react';
