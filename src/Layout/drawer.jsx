@@ -87,7 +87,7 @@ const drawer = (
           <ListItemIcon><InboxIcon /></ListItemIcon>
           <ListItemText><strong>Testing</strong></ListItemText>
         </ListItemButton>
-        {['RenderChilds','Lifecycle'].map((text, index) => (
+        {['Testing'].map((text, index) => (
           <ListItem key={text} disablePadding button component={Link} href={'/testing/'+text}>
             <ListItemButton>
               <ListItemIcon>

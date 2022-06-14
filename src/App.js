@@ -23,6 +23,7 @@ import JSIntroPage from './pages/JSIntroPage';
 import JSXIntroPage from './pages/JSXIntroPage';
 import ReactIntroPage from './pages/ReactIntroPage';
 import VirtualDOMIntroPage from './pages/VirtualDOMIntroPage';
+import TestingPage from './pages/TestingPage';
 const drawerWidth = 300;
 
 function App(props) {
@@ -142,11 +143,7 @@ function App(props) {
             </Route>
 
             <Route path="testing" element={<M1Home />}>
-              <Route path="renderChilds" element={<RenderChilds />} ></Route>
-              <Route path="child" element={<Child />} ></Route>
-              <Route path="childwithprops" element={<ChildWithProps someData="some data" moreData="more data"/>} ></Route>
-              <Route path="childwithpropsandstate" element={<ChildWithStateAndProps />} ></Route>
-              <Route path="lifecycle" element={<LifeCyclePage />} ></Route>
+              <Route path="testing" index element={<TestingPage />} ></Route>
             </Route>
 
             <Route path="performance" element={<M1Home />}>
