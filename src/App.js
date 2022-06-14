@@ -22,6 +22,7 @@ import routes from './routes';
 import JSIntroPage from './pages/JSIntroPage';
 import JSXIntroPage from './pages/JSXIntroPage';
 import ReactIntroPage from './pages/ReactIntroPage';
+import VirtualDOMIntroPage from './pages/VirtualDOMIntroPage';
 const drawerWidth = 300;
 
 function App(props) {
@@ -112,6 +113,7 @@ function App(props) {
             <Route path="introduction" element={<M1Home />}>
               <Route path="js-intro" element={<JSIntroPage />} />
               <Route path="jsx-intro" element={<JSXIntroPage />} />
+              <Route path="virtualdom-intro" element={<VirtualDOMIntroPage />} />
               <Route path="react-intro" element={<ReactIntroPage />} />
             </Route>
             

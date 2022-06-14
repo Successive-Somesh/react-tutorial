@@ -19,7 +19,7 @@ const drawer = (
           <ListItemIcon><InboxIcon /></ListItemIcon>
           <ListItemText><strong>Introduction</strong></ListItemText>
         </ListItemButton>
-        {['JS','JSX','React',].map((text, index) => (
+        {['JS','JSX','VirtualDOM',].map((text, index) => (
           <ListItem key={text} disablePadding button component={Link} href={'/introduction/'+text+'-intro'}>
             <ListItemButton>
               <ListItemIcon>
