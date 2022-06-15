@@ -39,7 +39,7 @@ const drawer = (
           <ListItemIcon><InboxIcon /></ListItemIcon>
           <ListItemText><strong>Basic Concepts</strong></ListItemText>
         </ListItemButton>
-        {['Render Childs','Lifecycle','Props And State','Event Handling','Forms Handling'].map((text, index) => (
+        {['Render Childs','Lifecycle','Props And State','Event Handling','Forms Handling','Context'].map((text, index) => (
           <ListItem key={text} disablePadding button component={Link} href={'/basics/' + makeRoute(text)}>
             <ListItemButton>
               <ListItemIcon>

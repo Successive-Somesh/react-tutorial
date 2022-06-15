@@ -27,6 +27,7 @@ import TestingPage from '@pages/TestingPage';
 import PropsAndStatePage from '@pages/PropsAndStatePage';
 import EventHandlingPage from '@pages/EventHandlingPage';
 import FormHandlingPage from '@pages/FormHandlingPage';
+import NoMatchPage from '@pages/NoMatchPage';
 
 
 const drawerWidth = 300;
@@ -132,6 +133,7 @@ function App(props) {
               <Route path="props-and-state" element={<PropsAndStatePage />}></Route>
               <Route path="event-handling" element={<EventHandlingPage />}></Route>
               <Route path="forms-handling" element={<FormHandlingPage />}></Route>
+              <Route path="*" element={<NoMatchPage />} ></Route>
             </Route>
 
             <Route path="advanced" element={<M1Home />}>
