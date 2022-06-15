@@ -9,17 +9,9 @@ class Level2 extends React.Component {
 
     static getDerivedStateFromProps(props, state) {
         return {data:props.data};
-       /*  if(state.data !== props.data){
-            console.log("IF - derived state");
-            return {data:props.data};
-        }
-        console.log("Else - derived state");    
-        return {data:state.data}; */    
     }
-    shouldComponentUpdate(props, state) {
-        if (this.props.showChanges === "no")
-            return false;
-        return true;
+    shouldComponentUpdate(_props, _state) {
+        return this.props.showChanges === "no" ? false : true;
     }
 
     increaseLevel2() {

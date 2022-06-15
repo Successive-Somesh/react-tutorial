@@ -1,4 +1,4 @@
-const code =`
+const ChildWithPropsCode =`
 import React from 'react';
 class ChildWithProps extends React.Component{
     constructor(props){
@@ -15,4 +15,4 @@ class ChildWithProps extends React.Component{
 
 export default ChildWithProps;
 `;
-export default code;
+export default ChildWithPropsCode;

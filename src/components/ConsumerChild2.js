@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import UserContext, { UserConsumer } from '../context/UserContext';
+import { UserConsumer } from '../context/UserContext';
 class ConsumerChild2 extends React.Component {
 
     render() {

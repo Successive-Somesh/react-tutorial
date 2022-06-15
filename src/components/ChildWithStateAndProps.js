@@ -12,12 +12,10 @@ class ChildWithStateAndProps extends React.Component {
 
     changeProps(){
         console.log(this.props);
-        //this.props.someData = "New Value"; // will throw error
     }
     changeState(){
         console.log("changeState invoked");
         this.changeStateValue();
-        //console.log(this.state);
     }
 
     changeStateValue(){
@@ -32,7 +30,6 @@ class ChildWithStateAndProps extends React.Component {
         }
     }
     render() {
-        //console.log("render invoked");
         return <>
             <h2>Props Data</h2>
             <p>{this.props.someData}</p>

@@ -1,9 +1,9 @@
 import './App.css';
-import React, { Component } from 'react';
+import React from 'react';
 import ChildWithProps from '@components/ChildWithProps';
 import ChildWithStateAndProps from '@components/ChildWithStateAndProps.js';
 import LifeCyclePage from '@pages/LifeCyclePage';
-import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import M1Home from '@modules/m1/M1Home';
 import Child from '@components/Child';
 import RenderChilds from '@pages/RenderChilds';
@@ -18,7 +18,6 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import drawer from '@layout/drawer';
-import routes from './routes';
 import JSIntroPage from '@pages/JSIntroPage';
 import JSXIntroPage from '@pages/JSXIntroPage';
 import ReactIntroPage from '@pages/ReactIntroPage';
@@ -73,14 +72,13 @@ function App(props) {
         sx={{ width: { sm: drawerWidth }, flexShrink: { sm: 0 } }}
         aria-label="mailbox folders"
       >
-        {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
         <Drawer
           container={container}
           variant="temporary"
           open={mobileOpen}
           onClose={handleDrawerToggle}
           ModalProps={{
-            keepMounted: true, // Better open performance on mobile.
+            keepMounted: true, 
           }}
           sx={{
             display: { xs: 'block', sm: 'none' },
@@ -111,9 +109,6 @@ function App(props) {
         
 
         <section className='main' style={{height:'100vh'}}>
-          {/* {routes.map((e,index)=>{
-            return e.module;
-          })} */}
           <Routes>
             <Route path="/" element={<Child />} />
             
