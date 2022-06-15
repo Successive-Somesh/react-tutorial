@@ -9,6 +9,9 @@ import ListItemText from '@mui/material/ListItemText';
 import MailIcon from '@mui/icons-material/Mail';
 import { Link } from '@mui/material';
 
+function makeRoute(str){
+  return str.replace(/\s+/g, '-').toLowerCase();
+}
 
 const drawer = (
     <div>
@@ -20,7 +23,7 @@ const drawer = (
           <ListItemText><strong>Introduction</strong></ListItemText>
         </ListItemButton>
         {['JSX','VirtualDOM','React'].map((text, index) => (
-          <ListItem key={text} disablePadding button component={Link} href={'/introduction/'+text+'-intro'}>
+          <ListItem key={text} disablePadding button component={Link} href={'/introduction/'+makeRoute(text)+'-intro'}>
             <ListItemButton>
               <ListItemIcon>
                 {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
@@ -36,8 +39,8 @@ const drawer = (
           <ListItemIcon><InboxIcon /></ListItemIcon>
           <ListItemText><strong>Basic Concepts</strong></ListItemText>
         </ListItemButton>
-        {['RenderChilds','Lifecycle'].map((text, index) => (
-          <ListItem key={text} disablePadding button component={Link} href={'/basics/'+text}>
+        {['Render Childs','Lifecycle','Props And State','Event Handling','Forms Handling'].map((text, index) => (
+          <ListItem key={text} disablePadding button component={Link} href={'/basics/' + makeRoute(text)}>
             <ListItemButton>
               <ListItemIcon>
                 {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}

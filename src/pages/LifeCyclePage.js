@@ -7,7 +7,6 @@ import ReactLifeCyclePic from '@images/ReactLifeCyclePic.png';
 import codeInCard from '../utils/CodeInCard';
 function LifeCyclePage() {
     return (<>
-
         <h2>Lifecycle of a Component</h2>
         <div>
             Each component in React has a lifecycle which you can monitor and manipulate during its three main phases.

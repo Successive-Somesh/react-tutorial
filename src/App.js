@@ -19,11 +19,16 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import drawer from '@layout/drawer';
 import routes from './routes';
-import JSIntroPage from './pages/JSIntroPage';
-import JSXIntroPage from './pages/JSXIntroPage';
-import ReactIntroPage from './pages/ReactIntroPage';
-import VirtualDOMIntroPage from './pages/VirtualDOMIntroPage';
-import TestingPage from './pages/TestingPage';
+import JSIntroPage from '@pages/JSIntroPage';
+import JSXIntroPage from '@pages/JSXIntroPage';
+import ReactIntroPage from '@pages/ReactIntroPage';
+import VirtualDOMIntroPage from '@pages/VirtualDOMIntroPage';
+import TestingPage from '@pages/TestingPage';
+import PropsAndStatePage from '@pages/PropsAndStatePage';
+import EventHandlingPage from '@pages/EventHandlingPage';
+import FormHandlingPage from '@pages/FormHandlingPage';
+
+
 const drawerWidth = 300;
 
 function App(props) {
@@ -119,11 +124,14 @@ function App(props) {
             </Route>
             
             <Route path="basics" element={<M1Home />}>
-              <Route path="renderChilds" element={<RenderChilds />} ></Route>
+              <Route path="render-childs" element={<RenderChilds />} ></Route>
               <Route path="child" element={<Child />} ></Route>
-              <Route path="childwithprops" element={<ChildWithProps someData="some data" moreData="more data"/>} ></Route>
+              <Route path="child-with-props" element={<ChildWithProps someData="some data" moreData="more data"/>} ></Route>
               <Route path="childwithpropsandstate" element={<ChildWithStateAndProps />} ></Route>
               <Route path="lifecycle" element={<LifeCyclePage />} ></Route>
+              <Route path="props-and-state" element={<PropsAndStatePage />}></Route>
+              <Route path="event-handling" element={<EventHandlingPage />}></Route>
+              <Route path="forms-handling" element={<FormHandlingPage />}></Route>
             </Route>
 
             <Route path="advanced" element={<M1Home />}>
