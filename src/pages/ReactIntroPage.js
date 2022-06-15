@@ -1,6 +1,5 @@
 import { List, ListItem } from "@mui/material";
-import SyntaxHighlighter from "react-syntax-highlighter/dist/esm/default-highlight";
-import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+import codeInCard from "../utils/CodeInCard";
 
 const code1 = `
 import React from "react";
@@ -71,29 +70,19 @@ function ReactIntroPage() {
                 Components in react can be created by extending React. Component class. It helps derived components gain access to the existing methods in React. Components that control the transition of various lifecycle methods for the component.
             </p>
             <h3>Example 1: Following is a simple class component in react to say hello world</h3>
-            <SyntaxHighlighter language="javascript" style={docco}>
-                {code1}
-            </SyntaxHighlighter>
+            {codeInCard(code1)}
             <h3>Example 2 : Following is a simple class component in react to say hello world</h3>
-            <SyntaxHighlighter language="javascript" style={docco}>
-                {code2}
-            </SyntaxHighlighter>
+            {codeInCard(code2)}
             <h3>Functional Components</h3>
 
             <p>React also provides a way of creating components by writing it as a function.</p>
-            <SyntaxHighlighter language="javascript" style={docco}>
-                {code3}
-            </SyntaxHighlighter>
+            {codeInCard(code3)}
 
             <p>You can also create React components by creating an arrow function as well</p>
-            <SyntaxHighlighter language="javascript" style={docco}>
-                {code4}
-            </SyntaxHighlighter>
+            {codeInCard(code4)}
 
             <p>You can also omit the curly braces and return keyword to write your code as :</p>
-            <SyntaxHighlighter language="javascript" style={docco}>
-                {code5}
-            </SyntaxHighlighter>
+            {codeInCard(code5)}
         </>
     );
 }

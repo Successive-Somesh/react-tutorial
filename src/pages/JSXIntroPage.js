@@ -2,18 +2,8 @@ import { Card, CardContent, Divider, List, ListItem, Typography } from '@mui/mat
 import SyntaxHighlighter from "react-syntax-highlighter/dist/esm/default-highlight";
 import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 import { code1, code2, code3, code4, code5, code6, code7, code8, code9, code10 } from '@codes/JSXIntroCode';
+import codeInCard from '../utils/CodeInCard';
 
-function returnExampleBox(code) {
-    return (
-        <Card variant="outlined" className='gapBottom'>
-            <CardContent>
-                <SyntaxHighlighter language="javascript" style={docco}>
-                    {code1}
-                </SyntaxHighlighter>
-            </CardContent>
-        </Card>
-    );
-}
 
 function JSXIntroPage() {
     return (
@@ -34,10 +24,10 @@ function JSXIntroPage() {
 
 
             <h3>Example 1: Following is a simple JSX example.</h3>
-            {returnExampleBox(code1)}
+            {codeInCard(code1)}
 
             <h3>Example 2 : Following is an example of creating React Elements without using JSX.</h3>
-            {returnExampleBox(code2)}
+            {codeInCard(code2)}
 
             <p>
                 As it can be seen in the first example, JSX allows us to write HTML directly within the JavaScript code.
@@ -47,7 +37,7 @@ function JSXIntroPage() {
 
             <h3>Example Code :- </h3>
 
-            {returnExampleBox(code3)}
+            {codeInCard(code3)}
 
 
             <p> Inserting a Large Block of HTML
@@ -55,7 +45,7 @@ function JSXIntroPage() {
             To write HTML on multiple lines, put the HTML inside parentheses:</p>
 
             <h3>Example Code :- </h3>
-            {returnExampleBox(code4)}
+            {codeInCard(code4)}
 
 
             <p>One Top Level Element
@@ -67,14 +57,14 @@ function JSXIntroPage() {
 
             <h3>Example Code :-</h3>
 
-            {returnExampleBox(code5)}
+            {codeInCard(code5)}
 
             Alternatively, you can use a "fragment" to wrap multiple lines. This will prevent unnecessarily adding extra nodes to the DOM.
 
             A fragment looks like an empty HTML tag: <></>.
 
             <h3>Example Code :-</h3>
-            {returnExampleBox(code6)}
+            {codeInCard(code6)}
             Elements Must be Closed
 
             JSX follows XML rules, and therefore HTML elements must be properly closed.
@@ -82,7 +72,7 @@ function JSXIntroPage() {
 
             <h3>Example Code:- </h3>
 
-            {returnExampleBox(code7)}
+            {codeInCard(code7)}
 
             Attribute class = className
             The class attribute is a much used attribute in HTML, but since JSX is rendered as JavaScript, and the class keyword is a reserved word in JavaScript, you are not allowed to use it in JSX.
@@ -92,7 +82,7 @@ function JSXIntroPage() {
             JSX solved this by using className instead. When JSX is rendered, it translates className attributes into class attributes.
 
             <h3>Example Code :- </h3>
-            {returnExampleBox(code8)}
+            {codeInCard(code8)}
 
 
 
@@ -103,11 +93,11 @@ function JSXIntroPage() {
 
             <h3>Example Code:- (Without ternary expression)</h3>
 
-            {returnExampleBox(code9)}
+            {codeInCard(code9)}
 
             <h3>Example Code:- (with ternary expression)</h3>
 
-            {returnExampleBox(code10)}
+            {codeInCard(code10)}
         </>
     );
 }
