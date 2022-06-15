@@ -1,6 +1,4 @@
-import { Card, CardContent, Divider, List, ListItem, Typography } from '@mui/material';
-import SyntaxHighlighter from "react-syntax-highlighter/dist/esm/default-highlight";
-import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+import { List, ListItem, Typography } from '@mui/material';
 import { code1, code2, code3, code4, code5, code6, code7, code8, code9, code10 } from '@codes/JSXIntroCode';
 import codeInCard from '../utils/CodeInCard';
 

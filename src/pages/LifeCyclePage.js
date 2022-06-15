@@ -1,6 +1,4 @@
-import { Card, CardContent, Divider, Typography } from '@mui/material';
-import SyntaxHighlighter from 'react-syntax-highlighter';
-import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+import { Divider, Typography } from '@mui/material';
 import LifeCycleDemo from '@components/LifeCycleDemo';
 import { lifecycleDemoCode, lifecycleCode } from "../codesamples/LifeCyclePageCode";
 import ReactLifeCyclePic from '@images/ReactLifeCyclePic.png';

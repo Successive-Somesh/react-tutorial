@@ -1,6 +1,4 @@
-import { Card, CardContent, Divider, Grid } from '@mui/material';
-import SyntaxHighlighter from 'react-syntax-highlighter';
-import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+import { Divider } from '@mui/material';
 import Child from "@components/Child";
 import ChildWithProps from '@components/ChildWithProps';
 import ChildWithStateAndProps from '@components/ChildWithStateAndProps';
