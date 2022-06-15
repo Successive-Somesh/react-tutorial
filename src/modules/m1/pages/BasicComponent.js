@@ -117,11 +117,7 @@ class BasicComponent extends Component {
       {
         <>
           <h2>Form Sample with Data </h2>
-          <div className="demo">
-            {
-              // <FormSampleWithData />
-            }
-          </div>
+
         </>
       }
 
