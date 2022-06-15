@@ -23,8 +23,6 @@ class BasicComponent extends Component {
       unmount: false,
       user: { name: "Somesh", org: "ST" }
     }
-    //console.log(this);
-
   }
 
 
