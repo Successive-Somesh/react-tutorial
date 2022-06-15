@@ -3,7 +3,7 @@ import Child from "@components/Child";
 import ChildWithProps from '@components/ChildWithProps';
 import ChildWithStateAndProps from '@components/ChildWithStateAndProps';
 import { appChildCode, appChildWithPropsCode, appChildCodeWithClass } from '@codes/appChildCode';
-import { childCode, childCodeWithProps, childCodeWithClass, childCodeWithPropsOrDisplayNull } from '@codes/ChildCode';
+import { childCode, childCodeWithProps, childCodeWithClass } from '@codes/ChildCode';
 import codeInCard from '../utils/CodeInCard';
 
 function RenderChildCase(props) {
@@ -27,7 +27,7 @@ function RenderChildCase(props) {
     )
 }
 
-function RenderChilds(props) {
+function RenderChilds() {
     return (
         <>
             <h1 className="demo">Rendering Child Components</h1>

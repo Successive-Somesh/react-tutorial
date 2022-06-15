@@ -7,7 +7,7 @@ class Level2 extends React.Component {
         this.increaseLevel2 = this.increaseLevel2.bind(this);
     }
 
-    static getDerivedStateFromProps(props, state) {
+    static getDerivedStateFromProps(props, _state) {
         return {data:props.data};
     }
     shouldComponentUpdate(_props, _state) {

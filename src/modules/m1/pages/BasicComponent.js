@@ -1,20 +1,18 @@
 import './../../../App.css';
 import React, { Component } from 'react';
-import Child1 from './../../../components/Child';
-import Child2 from './../../../components/Child';
-import ChildWithProps from './../../../components/ChildWithProps';
-import ChildWithStateAndProps from './../../../components/ChildWithStateAndProps.js';
-import LifeCycle from './../../../components/LifeCycle';
-import ChildWithElements from './../../../components/ChildWithElements';
-import Level1 from './../../../components/Level1';
-import { UserProvider } from './../../../context/UserContext';
-import ConsumerChild1 from './../../../components/ConsumerChild1';
-import ChildWrapper1 from './../../../components/ChildWrapper1';
-import ChildWrapper2 from './../../../components/ChildWrapper2';
-import ConsumerChild2 from './../../../components/ConsumerChild2';
-import FormSample from './../../../components/FormSample';
-import FormSampleWithData from './../../../components/FormSampleWithData';
-import ErrorBoundary from './../../../components/ErrorBoundary';
+import Child1 from '@components/Child';
+import Child2 from '.@components/Child';
+import ChildWithProps from '@components/ChildWithProps';
+import ChildWithStateAndProps from '@components/ChildWithStateAndProps.js';
+import LifeCycle from '@components/LifeCycle';
+import ChildWithElements from '@components/ChildWithElements';
+import Level1 from '@components/Level1';
+import { UserProvider } from '@context/UserContext';
+import ConsumerChild1 from '@components/ConsumerChild1';
+import ChildWrapper1 from '@components/ChildWrapper1';
+import ChildWrapper2 from '@components/ChildWrapper2';
+import ConsumerChild2 from '@components/ConsumerChild2';
+import FormSample from '@components/FormSample';
 
 
 class BasicComponent extends Component {
